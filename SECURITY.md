@@ -305,10 +305,11 @@ while True:
 |------|----------------------------------|-----------------|----------|-----------|
 | W1   | Manual endpoint testing (Day 5)  | AI Developer 3  | 10 tests — 10 Pass, 0 Fail | Completed |
 | W2   | OWASP ZAP baseline (Day 7)       | AI Developer 3  | 3 findings — 1 Medium, 2 Low | Completed |
-| W2   | ZAP findings fix (Day 8)         | AI Developer 3  | Pending  | Scheduled |
+| W2   | ZAP findings fix (Day 8)         | AI Developer 3  | All 3 findings fixed | Completed |
 | W3   | OWASP ZAP active scan (Day 11)   | AI Developer 3  | Pending  | Scheduled |
 | W3   | Full stack security test (Day 13)| AI Developer 3  | Pending  | Scheduled |
 | W3   | PII audit (Day 9)                | AI Developer 3  | 0 PII issues found — PASS | Completed |
+| W2   | Week 2 security sign-off (Day 10)| AI Developer 3  | 8 tests — 8 Pass, 0 Fail — SIGNED OFF | Completed |
 | W4   | Final security checklist (Day 15)| All Members     | Pending  | Scheduled |
 
 --- 
