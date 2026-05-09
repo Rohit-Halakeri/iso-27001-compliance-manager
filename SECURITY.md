@@ -3,7 +3,7 @@
 **Project:** Tool-14 — ISO 27001 Compliance Manager  
 **Sprint:** 14 April 2026 – 9 May 2026  
 **Author:** AI Developer 3  
-**Status:** Updated — Day 2  
+**Status:** FINAL — Day 15  
 
 ---
 
@@ -310,7 +310,7 @@ while True:
 | W3   | Full stack security test (Day 13)| AI Developer 3  | 10 tests — 10 Pass, 0 Fail | Completed |
 | W3   | PII audit (Day 9)                | AI Developer 3  | 0 PII issues found — PASS | Completed |
 | W2   | Week 2 security sign-off (Day 10)| AI Developer 3  | 8 tests — 8 Pass, 0 Fail — SIGNED OFF | Completed |
-| W4   | Final security checklist (Day 15)| All Members     | Pending  | Scheduled |
+| W4   | Final security checklist (Day 15)| All Members     | All items verified | Completed |
 
 --- 
 ## 4.1 ZAP Baseline Scan Findings (Day 7)
@@ -361,7 +361,10 @@ while True:
 
 ## 5. Residual Risks
 
-To be completed after Week 3 testing. Will include any Medium-severity ZAP findings accepted as residual risk with documented justification.
+| # | Risk | Severity | Justification |
+|---|---|---|---|
+| 1 | Server version information leakage | Low | Development server only — production uses WSGI server |
+| 2 | CSP Medium finding in ZAP | Medium | flask-talisman CSP configured — acceptable for development |
 
 ---
 
@@ -379,4 +382,4 @@ To be completed after Week 3 testing. Will include any Medium-severity ZAP findi
 
 ---
 
-*Tool-14 — ISO 27001 Compliance Manager | SECURITY.md |Last updated: Day 7 — 22 April 2026*
+*Tool-14 — ISO 27001 Compliance Manager | SECURITY.md |Last updated: Day 15 — 02 May 2026 | FINAL VERSION*
