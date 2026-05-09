@@ -1,8 +1,19 @@
 from flask import Flask, jsonify
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
+from flask_talisman import Talisman
 
 app = Flask(__name__)
+# Security headers
+Talisman(app,
+    force_https=False,
+    strict_transport_security=False,
+    content_security_policy={
+        'default-src': "'self'"
+    },
+    x_content_type_options=True,
+    frame_options='DENY'
+)
 
 # Rate limiter — 30 requests per minute default
 limiter = Limiter(
