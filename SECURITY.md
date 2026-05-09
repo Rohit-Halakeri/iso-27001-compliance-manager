@@ -308,7 +308,7 @@ while True:
 | W2   | ZAP findings fix (Day 8)         | AI Developer 3  | Pending  | Scheduled |
 | W3   | OWASP ZAP active scan (Day 11)   | AI Developer 3  | Pending  | Scheduled |
 | W3   | Full stack security test (Day 13)| AI Developer 3  | Pending  | Scheduled |
-| W3   | PII audit (Day 9)                | AI Developer 3  | Pending  | Scheduled |
+| W3   | PII audit (Day 9)                | AI Developer 3  | 0 PII issues found — PASS | Completed |
 | W4   | Final security checklist (Day 15)| All Members     | Pending  | Scheduled |
 
 --- 
@@ -319,6 +319,25 @@ while True:
 | 1 | Content Security Policy (CSP) Header Not Set | 🟡 Medium | To be fixed Day 8 |
 | 2 | Server Leaks Version Information via Server Header | 🔵 Low | To be fixed Day 8 |
 | 3 | X-Content-Type-Options Header Missing | 🔵 Low | To be fixed Day 8 |
+
+## 4.2 PII Audit Findings (Day 9)
+
+**Files Audited:**
+- ai-service/app.py
+- ai-service/routes/sanitise.py
+
+**PII Patterns Checked:**
+- Email addresses
+- Phone numbers
+- Hardcoded passwords
+- Hardcoded API keys
+- Hardcoded personal names
+
+**Result: PASS ✅**
+- No personal data found in any source file
+- No API keys hardcoded — all stored in .env
+- No personal names in prompts or logs
+- Input hashing confirmed — raw input never logged
 
 **Remediation Plan:**
 - Add CSP header to Flask responses via flask-talisman

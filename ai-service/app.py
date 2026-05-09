@@ -12,6 +12,7 @@ Talisman(app,
         'default-src': "'self'"
     },
     x_content_type_options=True,
+    
     frame_options='DENY'
 )
 
